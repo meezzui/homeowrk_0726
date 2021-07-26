@@ -1,0 +1,8 @@
+ create table tb_reply(
+	re_idx bigint auto_increment primary key,
+    re_userid varchar(20) not null,
+    re_content varchar(1000) not null,
+    re_regdate datetime default now(),
+    re_boardidx bigint not null
+ 
+ );
